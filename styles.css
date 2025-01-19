@@ -1,0 +1,125 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color:  hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    background-color:hsl(0, 0%, 12%) ;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+.box{
+    width: 80%;
+    height:70%;
+    } 
+}
+
+@media (min-width: 600px) and (max-width:900px){
+    .box{
+        width:55%;
+        height: 70%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    .box{
+        width: 40%;
+        height: 75%;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .box{
+        width:25%;
+        height: 75%;
+    }
+    
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+
+}
+
+@font-face {
+    font-family: test;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+
+    font-family: font2;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+
+    font-family: font3;
+    src:url(assets/fonts/static/Inter-Regular.ttf)
+}
+
+h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+    font-family: test;
+}
+h4{
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    color:hsl(75, 94%, 57%);
+    font-family: font2;
+}
+
+h5{
+    font-size: 0.8em;
+    color: hsl(0, 0%, 57%);
+    font-family: font3;
+}
+
+.button {
+ background-color:  hsl(0, 0%, 20%);
+ margin: 0.5em;
+ border-radius: 0.8em;
+ padding: 1.1em;
+ height: 3.5em;
+ width: 20em;
+ color: white;
+ display: center;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ border: none;
+ transition: background-color 0.3s ease ;
+}
+
+.button:hover{
+    background-color:hsl(334, 6%, 75%);
+    color: hsl(0, 0%, 20%) ;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(254, 254, 254, 0.992);
+}
